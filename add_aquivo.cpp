@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <string>
 using namespace std;
 
 void NovoArquivo();
@@ -10,9 +9,9 @@ int main()
 {
     string option;
 
-    cout << "Deseja abrir ou escrever um arquivo" << endl;
+    cout << "Deseja 'incluir' em um arquivo existente ou 'criar' um novo arquivo" << endl;
     cin >> option;
-    if (option != "abrir")
+    if (option != "criar")
     {
         IncluirAluno();
     }
@@ -68,6 +67,7 @@ void IncluirAluno()
         }
         else
         {
+            NovoAluno.close();
             ofstream NovoAluno("./ALUNOS.txt", ios::app);
             NovoAluno << N_numero << " " << N_nome << " " << N_curso << " " << N_nota1 << " " << N_nota2 << "\n";
         }
