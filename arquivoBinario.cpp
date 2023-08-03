@@ -59,7 +59,7 @@ void escreverRegistro()
     while (x == 's')
     {
         cin >> venda.codigo_vendedor >> venda.nome_vendedor >> venda.valor_venda >> venda.mes;
-        f.write(reinterpret_cast<char *>(&venda), sizeof(registro));
+        f.write(reinterpret_cast<char *>(&venda), sizeof(registro[2]));
 
         cout << "Deseja inserir mais dados (s/n)" << endl;
         cin >> x;

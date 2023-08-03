@@ -1,2 +1,3 @@
-# TecnicasProgramacaoII_2B
- Repositório destinado as aulas de tecnicas 2 da Barão de mauá.
+# TecnicasProgramacaoII
+
+Repositório destinado as aulas de Técnicas de Programação 2 da Barão de mauá.
